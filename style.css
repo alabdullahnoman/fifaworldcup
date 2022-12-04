@@ -1,0 +1,244 @@
+body {
+    margin: 0;
+}
+
+header,
+section {
+    @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap');
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 3vw 9vw;
+
+}
+
+header {
+    background-color: rgb(31, 28, 28);
+    display: flex;
+    color: rgb(255, 255, 255);
+    justify-content: center;
+    border-radius: 25px;
+    align-items: stretch;
+}
+
+.title {
+    font-size: 5vw;
+    padding-top: 5vw;
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: rgb(121, 2, 121);
+    transition: background-color 2s;
+}
+
+.title:hover {
+    color: red;
+    text-shadow: 3px 3px 3px rgba(119, 123, 129, 0.815);
+    transition: color 1s, text-shadow 1s;
+
+}
+
+.header-half {
+    padding: 0 5vw;
+
+}
+
+.button {
+    text-decoration: none;
+    background-color: rgb(255, 0, 0);
+    padding: 1vw 2vw;
+    border-radius: 5px;
+    color: white;
+
+}
+
+.header-half img:hover {
+    transform: scale(1.1);
+    transition: transform 3s;
+}
+
+.header-half img {
+    width: auto;
+    height: 33em;
+
+}
+
+.blog-sec {
+    display: flex;
+    margin-top: 4vw;
+
+}
+
+.nav-bar {
+    position: static;
+    background-color: black;
+    height: 15%;
+    width: 40%;
+    padding: 2vw;
+    display: flex;
+    flex-direction: column;
+    margin-right: 2vw;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-bottom: 4vw;
+}
+
+.nav-item {
+    background-color: gainsboro;
+    padding: 1vw 2.5vw;
+    margin: 0.5vw;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.blog-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1vw;
+
+}
+
+.sectionbtn {
+    border: 1px solid rgb(41, 50, 85);
+    border-radius: 0.5vw;
+    width: 10vw;
+    padding: 0.5vw 1vw;
+    text-align: center;
+}
+
+.blog-container img {
+    height: auto;
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    margin-bottom: 0;
+}
+
+.blog {
+    background-color: rgba(177, 210, 230, 0.849);
+    border-radius: 5px;
+    border-radius: 0px 0 10px 10px;
+    padding: 1vw 1.5vw;
+    margin-top: 0;
+}
+
+.viewall {
+    margin: auto;
+    background-color: red;
+    color: black;
+    width: 15%;
+    text-align: center;
+    padding: 0.08vw 1vw;
+    border-radius: 1vw;
+    margin-bottom: 1vw;
+    visibility: hidden;
+}
+
+footer {
+    background-color: rgb(31, 28, 28);
+    text-align: center;
+    padding: 4vw 2vw;
+
+}
+
+.footer-container {
+    display: flex;
+    gap: 5vw;
+    margin-top: 3vw;
+    color: white;
+    justify-content: center;
+}
+
+.countries {
+    display: grid;
+    grid-template-columns: 43% 14% 43%;
+    text-align: center;
+}
+
+.countries img {
+    height: 100%;
+}
+
+.match-description {
+    text-align: center;
+    background-color: rgba(235, 205, 191, 0.856);
+    margin: 0;
+    padding: 3vw;
+    border-radius: 0 0 10px 10px;
+}
+
+#blog-btn {
+    background-color: red;
+    color: white;
+}
+
+#match-btn {
+    background-color: red;
+    color: white;
+}
+
+@media screen and (max-width:580px) {
+    header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .head-title {
+        text-align: center;
+    }
+
+    .title {
+        font-size: xx-large;
+
+    }
+
+    .blog-sec {
+        flex-direction: column;
+    }
+
+    .nav-bar {
+        flex-direction: row;
+        width: 95%;
+        justify-content: space-around;
+    }
+
+    .blog-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .footer-container {
+        flex-direction: column;
+    }
+
+    .viewall {
+        visibility: visible;
+    }
+
+}
+
+@media screen and (min-width:581px) and (max-width:1000px) {
+    .head-title {
+        padding-left: 6vw;
+        width: 100%;
+    }
+
+    .nav-bar {
+        flex-direction: row;
+        width: 95%;
+        justify-content: space-around;
+    }
+
+    .blog-sec {
+        flex-direction: column;
+    }
+
+    .blog-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .viewall {
+        visibility: visible;
+    }
+
+
+}
